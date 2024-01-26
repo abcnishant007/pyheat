@@ -128,7 +128,7 @@ class PyHeat(object):
                 arr.append([0.0])
 
         # Create nd-array from list of data points.
-        self.pyfile.data = np.array(arr)
+        self.pyfile.data = np.log(np.array(arr) + np.finfo(float).eps)
 
     def __create_heatmap_plot(self):
         """Method to actually create the heatmap from profile stats."""
