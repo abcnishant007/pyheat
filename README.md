@@ -1,3 +1,5 @@
+Sometimes, there are certain lines in the code which are known to be slow and might not be the case that the developer is interested in profiling. While this could be done by pre-executing upto the line and then run pyheat only for a snippet, it is much easier if we just use a `log` scale. 
+
 # pyheat
 
 [![pypiv](https://img.shields.io/pypi/v/py-heat.svg)](https://pypi.python.org/pypi/py-heat)
